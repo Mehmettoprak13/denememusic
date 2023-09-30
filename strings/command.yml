@@ -11,7 +11,7 @@
 # Commands in Every Language
 
 # Bot Commands
-PING_COMMAND : ["ping"]
+PING_COMMAND : ["ping", "png"]
 START_COMMAND : ["start"]
 HELP_COMMAND : ["help", "yardim", "yardım"]
 SETTINGS_COMMAND : ["settings", "setting", "ayarlar", "ayar"]
