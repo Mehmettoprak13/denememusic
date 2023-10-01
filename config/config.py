@@ -42,7 +42,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001904974463"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
 
@@ -84,15 +84,15 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/KlasSupport") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", None) # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", "https://t.me/logotasarimcisi")  # Example:- https://t.me/ARCH_SUPPORTS
+    "SUPPORT_GROUP", None)  # Example:- https://t.me/ARCH_SUPPORTS
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "false")
 
 # Time after which you're assistant account will leave chats automatically.
 
@@ -218,92 +218,93 @@ autoclean = []
 
 # Images
 
-START_IMG_URL = getenv("START_IMG_URL", "None")
+START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "https://graph.org/file/511bc4c2d50a0e97a8734.jpg",
+    "assets/Ping.jpeg",
 
 )
 
 PLAYLIST_IMG_URL = getenv(
 
-    "PLAYLIST_IMG_URL", None
+    "PLAYLIST_IMG_URL",
 
-    "None"
+    "assets/Playlist.jpeg",
+
 )
 
 GLOBAL_IMG_URL = getenv(
 
-    "GLOBAL_IMG_URL", None
+    "GLOBAL_IMG_URL",
 
-    "None",
+    "assets/Global.jpeg",
 
 )
 
 STATS_IMG_URL = getenv(
 
-    "STATS_IMG_URL", None
+    "STATS_IMG_URL",
 
-    "None",
+    "assets/Stats.jpeg",
 
 )
 
 TELEGRAM_AUDIO_URL = getenv(
 
-    "TELEGRAM_AUDIO_URL", None
+    "TELEGRAM_AUDIO_URL",
 
-    "None",
+    "assets/Audio.jpeg",
 
 )
 
 TELEGRAM_VIDEO_URL = getenv(
 
-    "TELEGRAM_VIDEO_URL", None
+    "TELEGRAM_VIDEO_URL",
 
-    "None",
+    "assets/Video.jpeg",
 
 )
 
 STREAM_IMG_URL = getenv(
 
-    "STREAM_IMG_URL", None
+    "STREAM_IMG_URL",
 
-    "None",
+    "assets/Stream.jpeg",
 
 )
 
 SOUNCLOUD_IMG_URL = getenv(
 
-    "SOUNCLOUD_IMG_URL", None
+    "SOUNCLOUD_IMG_URL",
 
-    "None",
+    "assets/Soundcloud.jpeg",
 
 )
 
 YOUTUBE_IMG_URL = getenv(
 
-    "YOUTUBE_IMG_URL", None
+    "YOUTUBE_IMG_URL",
 
-    "None",
+    "assets/Youtube.jpeg",
 
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
 
-    "SPOTIFY_ARTIST_IMG_URL", None
+    "SPOTIFY_ARTIST_IMG_URL",
 
-    "None",
+    "assets/SpotifyArtist.jpeg",
 
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
 
-    "SPOTIFY_ALBUM_IMG_URL", None
+    "SPOTIFY_ALBUM_IMG_URL",
 
-    "None",
+    "assets/SpotifyAlbum.jpeg",
 
 )
 
@@ -311,7 +312,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 
     "SPOTIFY_PLAYLIST_IMG_URL",
 
-    "None",
+    "assets/SpotifyPlaylist.jpeg",
 
 )
 
